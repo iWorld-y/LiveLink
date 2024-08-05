@@ -14,7 +14,7 @@ message GetLinkList{
   string msg    = 2;
 }
 message GetLinkResp{
-  int64 errno   = 1;
-  string errmsg = 2;
-  string data   = 3;
+  int64 errno      = 1;
+  string errmsg    = 2;
+  GetLinkData data = 3;
 }
