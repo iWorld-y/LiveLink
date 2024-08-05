@@ -2,25 +2,25 @@ package handler
 
 import (
 	"context"
-	linkApi "github.com/iWorld-y/LiveLink/idl/pb/link"
 	"log"
+
+	linkApi "github.com/iWorld-y/LiveLink/idl/pb/link"
+	"github.com/iWorld-y/LiveLink/internal/module"
 )
 
 type LinkHandler struct {
 	linkApi.UnimplementedLinkServer
+	linkM module.LinkModule
 }
 
 func (l *LinkHandler) GetMessage(ctx context.Context, req *linkApi.GetLinkReq) (*linkApi.GetLinkResp, error) {
-	log.Println(req)
+	data, err := l.linkM.GetMessage(ctx, req)
+	if err != nil {
+		log.Println(err)
+	}
 	return &linkApi.GetLinkResp{
 		Errno:  0,
 		Errmsg: "",
-		Data: &linkApi.GetLinkData{
-			GroupId: 0,
-			List: []*linkApi.GetLinkList{{
-				UserId: 0,
-				Msg:    "hello, world",
-			}},
-		},
+		Data:   data,
 	}, nil
 }
