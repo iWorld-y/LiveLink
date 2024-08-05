@@ -1,0 +1,16 @@
+syntax = "proto3";
+package LinkSvc;
+option go_package = "github.com/iWorld-y/LiveLink/idl/proto/link";
+
+import "link/link_struct.proto";
+import "google/api/annotations.proto";
+
+service Link {
+  rpc GetMessage(GetLinkReq) returns (GetLinkResp) {
+    option (google.api.http) = {
+      post: "/v1/link/query"
+      body: "*"
+    };
+  }
+}
+
