@@ -1,4 +1,4 @@
-module github.com/iWorld-y/LiveLink
+module github.com/iWorld-y/TradeHub
 
 go 1.22.5
 

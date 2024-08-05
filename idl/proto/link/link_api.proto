@@ -1,6 +1,6 @@
 syntax = "proto3";
 package LinkSvc;
-option go_package = "github.com/iWorld-y/LiveLink/idl/proto/link";
+option go_package = "github.com/iWorld-y/TradeHub/idl/proto/link";
 
 import "link/link_struct.proto";
 import "google/api/annotations.proto";

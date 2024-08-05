@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	linkApi "github.com/iWorld-y/LiveLink/idl/pb/link"
-	"github.com/iWorld-y/LiveLink/internal/module"
+	linkApi "github.com/iWorld-y/TradeHub/idl/pb/link"
+	"github.com/iWorld-y/TradeHub/internal/module"
 )
 
 type LinkHandler struct {

@@ -6,8 +6,8 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/iWorld-y/LiveLink/idl/pb/link"
-	"github.com/iWorld-y/LiveLink/internal/handler"
+	"github.com/iWorld-y/TradeHub/idl/pb/link"
+	"github.com/iWorld-y/TradeHub/internal/handler"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	"google.golang.org/grpc"

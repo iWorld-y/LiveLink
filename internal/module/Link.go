@@ -2,7 +2,7 @@ package module
 
 import (
 	"context"
-	linkApi "github.com/iWorld-y/LiveLink/idl/pb/link"
+	linkApi "github.com/iWorld-y/TradeHub/idl/pb/link"
 )
 
 type LinkModule struct {
