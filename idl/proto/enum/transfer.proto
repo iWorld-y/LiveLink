@@ -1,0 +1,9 @@
+syntax = "proto3";
+package LinkSvc;
+option go_package = "github.com/iWorld-y/TradeHub/idl/proto/enum";
+
+enum TransferType{
+  AVAILABLE_TO_AVAILABLE = 0; // 可用转可用
+  AVAILABLE_TO_FROZEN    = 1; // 可用转冻结
+  FROZEN_TO_AVAILABLE    = 2; // 冻结转可用
+}

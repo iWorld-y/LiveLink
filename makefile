@@ -5,4 +5,4 @@ gen:
         --go_out=idl/pb --go_opt=paths=source_relative \
         --go-grpc_out=idl/pb --go-grpc_opt=paths=source_relative \
         --grpc-gateway_out=idl/pb --grpc-gateway_opt=paths=source_relative \
-        idl/proto/link/*
+        idl/proto/link/* idl/proto/enum/* idl/proto/trade_hub_err/*

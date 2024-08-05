@@ -1,0 +1,7 @@
+syntax = "proto3";
+package LinkSvc;
+option go_package = "github.com/iWorld-y/TradeHub/idl/proto/enum";
+
+enum TradeHubErr{
+  NegativeTransferAmount = 0; // 转账金额不能为负
+}
