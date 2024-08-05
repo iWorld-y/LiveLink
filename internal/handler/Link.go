@@ -3,6 +3,7 @@ package handler
 import (
 	"context"
 	linkApi "github.com/iWorld-y/LiveLink/idl/pb/link"
+	"log"
 )
 
 type LinkHandler struct {
@@ -10,6 +11,7 @@ type LinkHandler struct {
 }
 
 func (l *LinkHandler) GetMessage(ctx context.Context, req *linkApi.GetLinkReq) (*linkApi.GetLinkResp, error) {
+	log.Println(req)
 	return &linkApi.GetLinkResp{
 		Errno:  0,
 		Errmsg: "",

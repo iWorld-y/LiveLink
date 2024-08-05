@@ -2,15 +2,16 @@ package main
 
 import (
 	"context"
-	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/iWorld-y/LiveLink/internal/handler"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
 	"log"
 	"net"
 	"net/http"
 
 	"github.com/iWorld-y/LiveLink/idl/pb/link"
+	"github.com/iWorld-y/LiveLink/internal/handler"
+
+	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials/insecure"
 )
 
 func main() {
